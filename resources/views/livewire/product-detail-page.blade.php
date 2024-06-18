@@ -41,7 +41,7 @@
                           <div class="mb-8">
                               <h2 class="text-2xl font-bold dark:text-gray-400 md:text-3xl">{{$product->name}}</h2>
                               <p class="text-xl font-bold text-gray-700 dark:text-gray-400 mt-4">
-                                  <span>${{$product->price}}</span>
+                                  <span>KES {{$product->price}}</span>
                               </p>
                               <p class="text-gray-700 dark:text-gray-400 mt-2">
                                   {{$product->description}}

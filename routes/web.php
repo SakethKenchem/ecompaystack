@@ -1,10 +1,11 @@
 <?php
 
 use App\Livewire\Homepage;
+use App\Livewire\MyOrders;
 use App\Livewire\MyAccount;
+use App\Livewire\MyPayments;
 use App\Livewire\ProductsPage;
 use App\Livewire\Auth\LoginPage;
-use App\Livewire\MyPayments;
 use App\Livewire\Auth\RegisterPage;
 use App\Livewire\ProductDetailPage;
 use Illuminate\Support\Facades\Route;
@@ -34,6 +35,7 @@ Route::middleware('auth')->group(function(){
     Route::get('cancel', [PaystackController::class, 'cancel'])->name('cancel');
     Route::get('/products-page/{name}', ProductDetailPage::class);
     Route::get('/my-payments', MyPayments::class)->name('my.payments');
+    Route::get('/my-orders', MyOrders::class)->name('my.orders');
 
 
 });
