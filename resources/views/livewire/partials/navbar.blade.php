@@ -18,7 +18,7 @@
                   @auth
                       <a wire:navigate class="py-3 ps-px sm:px-3 sm:py-6 font-medium text-gray-500 hover:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500" href="/my-account">My Account</a>
                       <a class="py-3 ps-px sm:px-3 sm:py-6 font-medium text-gray-500 hover:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500" href="#">My Orders</a>
-                      <a class="py-3 ps-px sm:px-3 sm:py-6 font-medium text-gray-500 hover:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500" href="#">My Payments</a>
+                      <a class="py-3 ps-px sm:px-3 sm:py-6 font-medium text-gray-500 hover:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500" href="/my-payments">My Payments</a>
                   @endauth
 
                   <div class="flex items-center gap-x-2 py-2 sm:py-0 sm:ms-auto">

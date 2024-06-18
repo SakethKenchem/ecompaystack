@@ -102,7 +102,11 @@ class PaymentResource extends Resource
                     ->toggleable(isToggledHiddenByDefault: true),
             ])
             ->filters([
-                //
+                // Example of built-in filter
+                Tables\Filters\Filter::make('latest')
+                    ->query(fn (Builder $query) => $query->latest()),
+                Tables\Filters\Filter::make('largest')
+                    ->query(fn (Builder $query) => $query->orderBy('price', 'asc')),
             ])
             ->actions([
                 Tables\Actions\ViewAction::make(),

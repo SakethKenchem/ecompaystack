@@ -1,8 +1,10 @@
 <?php
 
 use App\Livewire\Homepage;
+use App\Livewire\MyAccount;
 use App\Livewire\ProductsPage;
 use App\Livewire\Auth\LoginPage;
+use App\Livewire\MyPayments;
 use App\Livewire\Auth\RegisterPage;
 use App\Livewire\ProductDetailPage;
 use Illuminate\Support\Facades\Route;
@@ -10,7 +12,6 @@ use App\Http\Controllers\UserController;
 use App\Livewire\Auth\ForgotPasswordPage;
 use App\Http\Controllers\AccountController;
 use App\Http\Controllers\PaystackController;
-use App\Livewire\MyAccount;
 
 
 Route::get('/', Homepage::class);
@@ -32,6 +33,7 @@ Route::middleware('auth')->group(function(){
     Route::get('success', [PaystackController::class, 'success'])->name('success');
     Route::get('cancel', [PaystackController::class, 'cancel'])->name('cancel');
     Route::get('/products-page/{name}', ProductDetailPage::class);
+    Route::get('/my-payments', MyPayments::class)->name('my.payments');
 
 
 });
