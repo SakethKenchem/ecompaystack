@@ -41,7 +41,7 @@
                           <div class="mb-8">
                               <h2 class="text-2xl font-bold dark:text-gray-400 md:text-3xl">{{$product->name}}</h2>
                               <p class="text-xl font-bold text-gray-700 dark:text-gray-400 mt-4">
-                                  <span>KES {{$product->price}}</span>
+                                  <span>KES{{$product->price}}</span>
                               </p>
                               <p class="text-gray-700 dark:text-gray-400 mt-2">
                                   {{$product->description}}
@@ -87,10 +87,11 @@
                       </div>
                   </div>
                   <div class="mt-6">
-                      <button type="button" class="w-full py-3 px-6 bg-blue-500 text-white rounded-lg dark:bg-blue-600 dark:hover:bg-blue-700 hover:bg-blue-600" @click.prevent="payWithPaystack()">
-                          Pay
-                      </button>
-                  </div>
+                    <button type="button" class="py-3 px-6 bg-blue-500 text-white rounded-lg dark:bg-blue-600 dark:hover:bg-blue-700 hover:bg-blue-600" @click.prevent="payWithPaystack()">
+                        <img src="{{ asset('images/paystack.256x252.png') }}" alt="Paystack Logo" class="inline-block mr-2" width="30" height="30" >
+                        Pay with Paystack
+                    </button>
+                </div>
               </form>
           </div>
       </section>
