@@ -87,9 +87,17 @@
                       </div>
                   </div>
                   <div class="mt-6">
-                    <button type="button" class="py-3 px-6 bg-blue-500 text-white rounded-lg dark:bg-blue-600 dark:hover:bg-blue-700 hover:bg-blue-600" @click.prevent="payWithPaystack()">
+                    <button type="button" class="py-3 px-6 bg-blue-400 text-white rounded-lg dark:bg-blue-600 dark:hover:bg-blue-700 hover:bg-blue-600" @click.prevent="payWithPaystack()">
                         <img src="{{ asset('images/paystack.256x252.png') }}" alt="Paystack Logo" class="inline-block mr-2" width="30" height="30" >
                         Pay with Paystack
+                    </button>
+                    <button type="button" class="py-3 px-6 bg-green-500 text-white rounded-lg hover:bg-green-700">
+                        <img src="{{asset('images/MPESA.png')}}" alt="" class="inline-block mr-2" width="40" height="40">
+                        Pay with Mpesa
+                    </button>
+                    <button type="button" class="py-3 px-6 bg-blue-900 text-white rounded-lg">
+                        <img src="{{asset('images/paypal.png')}}" alt="" class="inline-block mr-2" width="30" height="30">
+                        Pay with PayPal
                     </button>
                 </div>
               </form>
