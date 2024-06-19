@@ -1,4 +1,10 @@
 <div>
+    <style>
+        .form-group label {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+    </style>
   <div class="w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
       <section class="overflow-hidden bg-white py-11 font-poppins dark:bg-gray-800 shadow-md rounded-lg">
           <div class="max-w-6xl px-4 py-8 mx-auto lg:py-12 md:px-6">
@@ -175,10 +181,5 @@
           document.getElementById('payment-section').scrollIntoView({ behavior: 'smooth' });
       }
   </script>
-  <style>
-      .form-group label {
-          font-weight: 600;
-          margin-bottom: 5px;
-      }
-  </style>
+
 </div>
