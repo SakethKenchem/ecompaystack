@@ -118,7 +118,7 @@
               quantity: 1,
               async payWithPaystack() {
                   const handler = PaystackPop.setup({
-                      key: 'pk_test_ce6c87961277ec34fd79d9e2e3742bde02fc316e', // Replace with your public key
+                      key: '', // Replace with your public key
                       email: document.getElementById('email-address').value,
                       amount: document.getElementById('price').value * this.quantity * 100,
                       metadata: {

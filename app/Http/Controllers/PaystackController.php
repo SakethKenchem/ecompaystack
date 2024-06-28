@@ -19,7 +19,7 @@ class PaystackController extends Controller
             CURLOPT_URL => "https://api.paystack.co/transaction/verify/".$reference,
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_HTTPHEADER => [
-                "Authorization: Bearer sk_test_e93b9373eb965f9c1c882b086cf1223101f1362a",
+                "Authorization: Bearer ",
                 "Cache-Control: no-cache",
             ],
         ]);
